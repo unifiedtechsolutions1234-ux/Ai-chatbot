@@ -1,0 +1,127 @@
+/* Apply Glassmorphism Effect */
+.wardrobe-container {
+  max-width: 700px; /* Increased width */
+  padding: 30px; /* More padding */
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Improve Fonts */
+.wardrobe-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.wardrobe-container p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Glassy Input Fields */
+.wardrobe-container input,
+.wardrobe-container textarea {
+  width: 95%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+
+/* Cool Buttons - Add Outfit & Ask AI */
+.add-outfit-btn,
+.ask-ai-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add Outfit Button - Gradient & Hover Effect */
+.add-outfit-btn {
+  background: linear-gradient(90deg, #ff6f61, #ff3cac);
+  color: white;
+}
+
+.add-outfit-btn:hover {
+  background: linear-gradient(90deg, #ff3cac, #ff6f61);
+  transform: scale(1.05);
+}
+
+/* Ask AI Button - Cool Blue Shade */
+.ask-ai-btn {
+  background: linear-gradient(90deg, #2b86c5, #562bff);
+  color: white;
+}
+
+.ask-ai-btn:hover {
+  background: linear-gradient(90deg, #562bff, #2b86c5);
+  transform: scale(1.05);
+}
+
+/* Make the outfit list larger */
+.outfit-list {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 18px;
+}
+
+/* Style individual outfit items */
+.outfit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15); /* Subtle glass effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+.outfit-item:hover {
+  transform: scale(1.02);
+}
+
+/* Improve the ❌ button appearance */
+.delete-button {
+  border: none;
+  background: none; /* Remove background */
+  font-size: 14px; /* Make the icon smaller */
+  color: inherit; /* Match text color */
+  cursor: pointer;
+  margin-left: 10px; /* Space from outfit text */
+  padding: 0;
+  
+}
+
+.delete-button:hover {
+  color: #ff0000; /* Slightly darker red on hover */
+  transform: scale(1.1); 
+}
+

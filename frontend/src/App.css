@@ -1,0 +1,100 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
+
+/* Global Styles */
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(135deg, #0b132b, #3a0ca3);
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+/* Main Content */
+main {
+  text-align: center;
+  max-width: 700px;
+  margin-top: 0px;
+  margin-bottom: 40px auto;
+  padding: 20px;
+}
+
+/* Intro Paragraph */
+p {
+  font-size: 25px; /* Slightly larger */
+  font-weight: 400;
+  color: #cccccc;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-family: "Lato", sans-serif;
+}
+/* Center the header, h2, and paragraph properly */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust space below header */
+}
+
+/* Header (Title) */
+header {
+  font-size: 65px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff3cac, #562bff, #2b86c5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px; /* Reduce gap */
+  margin-top: -100px; /* Reduce gap */
+  margin-left: 0px;;
+}
+
+/* Subheading (H2) */
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px; /* Reduce space */
+}
+
+/* Description Paragraph */
+.description {
+  font-size: 20px; /* Bigger paragraph font */
+  max-width: 700px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 25px;
+  line-height: 1.6; /* Better readability */
+}
+
+/* 🔹 Footer Styling */
+.footer {
+  width: 98.5%;
+  text-align: center;
+  padding: -10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 1%;
+  margin-bottom: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
