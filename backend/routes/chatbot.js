@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config(); // Load environment variables
 
 const router = express.Router();
-const API_KEY = "AIzaSyCpQcpKJn8rPVeBSj2oPt4NEDeWQ_NPzkU";
+const API_KEY = "Enter your Google API key here"; // Replace with your actual API key
 
 if (!API_KEY) {
   console.error("❌ ERROR: Google API key is missing.");
