@@ -147,7 +147,4 @@ This project is licensed under the MIT License.
 
 ---
 
-## 🧑‍💻 Author
 
-Made with ❤️ by Sameer Senapati
-[GitHub](https://github.com/SameerSenapati17)
