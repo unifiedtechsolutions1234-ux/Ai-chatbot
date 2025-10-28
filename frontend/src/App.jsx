@@ -52,7 +52,7 @@ const App = () => {
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} AI Wardrobe Organizer. All rights reserved.</p>
+      <p>© {new Date().getFullYear()} Unified Tech Solutions LLC. All rights reserved.</p>
     </footer>
   );
 };

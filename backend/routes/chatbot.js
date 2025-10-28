@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 dotenv.config(); // Load environment variables
 
 const router = express.Router();
-const API_KEY = "Enter your Google API key here"; // Replace with your actual API key;
+const API_KEY = process.env.GOOGLE_API_KEY; // Replace with your actual API key;
 
 if (!API_KEY) {
   console.error("❌ ERROR: Google API key is missing.");
@@ -25,14 +25,18 @@ router.post("/", async (req, res) => {
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    const result = await model.generateContent([{ text }]);
+   const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+   const result = await model.generateContent({
+      contents: [{ role: "user", parts: [{ text }] }],
+    });
+
     const response = result.response.text();
-    console.log(response);
+    console.log("AI Response:", response);
+
     res.json({ success: true, response });
   } catch (error) {
-    console.error("🔥 Error in /api/chatbot route:", error.stack);
-    res.status(500).json({ success: false, message: "Failed to generate content." });
+    console.error("🔥 Error in /api/chatbot route:", error);
+    res.status(500).json({ success: false, message: error.message });
   }
 });
 
