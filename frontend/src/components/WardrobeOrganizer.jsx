@@ -24,7 +24,7 @@ const WardrobeOrganizer = () => {
     if (!userInput) return; // ✅ Fix: Use correct state variable
   
     try {
-      const res = await axios.post("http://localhost:3000/api/chatbot", { text: userInput });
+      const res = await axios.post("https://ai-chatbot-backend-kohl.vercel.app/api/chatbot", { text: userInput });
       
       console.log("🟢 Response from backend:", res.data);
       console.log("🔵 Extracted AI Response:", res.data.response);
